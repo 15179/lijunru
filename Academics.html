@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>neverland</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+
+    <script type="text/javascript">
+        //加载时调整网页宽度
+        window.onload = function () {
+            resetPage();
+        }
+        //浏览器被重置大小时调整网页宽度
+        window.onresize = function () {
+            resetPage();
+        }
+
+        function resetPage() {
+            var deviceWidth = document.documentElement.clientWidth;
+            //获取ID为wrapper的元素
+            originWidth = document.getElementById('wrapper');
+            //获取该元素的宽度并确定缩放比例
+            scale = deviceWidth / originWidth.clientWidth;
+            //按比例缩放到适合屏幕的大小
+            document.body.style.zoom = scale;
+        }
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/fontastic.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+
+    <style>
+        .single-resume-item {
+            display: block;
+            margin-bottom: 30px;
+            background-color: #fff;
+            -webkit-box-shadow: 0px 20px 60px 0px rgba(0, 11, 40, 0.06);
+            box-shadow: 0px 20px 60px 0px rgba(0, 11, 40, 0.06);
+            position: relative;
+            padding: 30px;
+            padding-bottom: 20px;
+            padding-right: 40px;
+        }
+
+        @media (max-width: 500px) {
+            .single-resume-item {
+                padding: 20px;
+            }
+        }
+
+        .single-resume-item:hover .year {
+            background-color: #4d63dd;
+            color: #fff;
+        }
+
+        .single-resume-item .year {
+            margin-bottom: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            color: #4d63dd;
+            background-color: #d4dbff;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 1;
+            border-radius: 3px;
+            -webkit-transition: all .3s ease-in;
+            transition: all .3s ease-in;
+        }
+
+        @media (max-width: 500px) {
+            .single-resume-item .year {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+
+        .single-resume-item h3 {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.5;
+            color: #333333;
+        }
+
+        .single-resume-item h5 {
+            color: #555;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .single-resume-item p {
+            margin-top: 15px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+<div class="container">
+    <div class="row">
+        <main class="post blog-post col-lg-8">
+            <div class="container">
+                <div class="post-single">
+                    <div class="post-thumbnail"><img src="img/background.jpeg"></div>
+                    <div class="post-details">
+                        <div class="post-meta d-flex justify-content-between">
+                            <div class="category">
+                                <a href="#">Lhasa</a>
+                                <a href="#">China</a>
+                            </div>
+                        </div>
+                        <h1>Curriculum Vitae<a href="#"><i class="fa fa-bookmark-o"></i></a></h1>
+                        <div class="post-footer d-flex align-items-center flex-column flex-sm-row">
+                            <a href="#" class="author d-flex align-items-center flex-wrap">
+                                <div class="avatar"><img src="img/t2.png" alt="..." class="img-fluid"></div>
+                                <div class="title"><span>Junru LI</span></div>
+                            </a>
+                            <div class="d-flex align-items-center flex-wrap">
+                                <div class="date"><i class="icon-clock"></i>2022-10-02</div>
+                                <div class="views"><i class="icon-eye"></i> 300</div>
+                                <div class="comments meta-last"><i class="icon-comment"></i>15</div>
+                            </div>
+                        </div>
+
+                        <div class="post-body">
+                            <div class="single-resume-item">
+                                <div class="year">
+                                    <span>Education</span>
+                                </div>
+                                <h3>Jiangxi University of Finance and Economics (JXUFE) </h3>
+                                <h5>Software Engineering (Big Data Technology) </h5>
+                                <p>GPA: 87.7/100 <br> Rank: 12/100</p>
+                            </div>
+
+                            <div class="single-resume-item">
+                                <div class="year">
+                                    <span>Research results</span>
+                                </div>
+                                <h3>Quantum algorithm for MMNG-based DBSCAN,
+                                    Scientific Reports 11, 15559 (2021)
+                                </h3>
+                                <h5> https://doi.org/10.1038/s41598-021-95156-7 </h5> <br>
+                                <h3>Software Copyright (2021)</h3>
+                                <h5> Designed the interface and realized system functions of
+                                    the website that connects the kindergarten, parents, and the teaching faculty.</h5>
+                            </div>
+
+                            <div class="single-resume-item">
+                                <div class="year">
+                                    <span>Working experience</span>
+                                </div>
+                                <h3>Booway (Ningbo) New Technology Co., Ltd. (2021) </h3>
+                                <h5>Big Data Development Intern </h5>
+                                <p>Extracted data from MySQL, SQL Server, MongoDB with Python;
+                                    analyzed data with Hive and Spark.</p>
+
+                                <h3>Nanchang Railway Bureau Group Co., Ltd (2020) </h3>
+                                <h5>Information Technology Intern </h5>
+                                <p>Finished information system inspections in accordance with the technical
+                                    specifications for operation
+                                    and maintenance.</p>
+                            </div>
+
+                            <div class="single-resume-item">
+                                <div class="year">
+                                    <span>Skills</span>
+                                </div>
+                                <h3>Computational languages </h3>
+                                <h5>Proficient at Java, Python, C, C++ </h5>
+                                <h3>Data processing </h3>
+                                <h5>mastered MySQL, Hadoop </h5>
+                                <h3>Piano</h3>
+                                <h5>certificate of piano Level 10</h5>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="post-tags">
+                            <a href="#" class="tag">#Education</a>
+                            <a href="#" class="tag">#Working</a>
+                            <a href="#" class="tag">#Research</a>
+                            <a href="#" class="tag">#Skills</a>
+                        </div>
+                        <div class="posts-nav d-flex justify-content-between align-items-stretch flex-column flex-md-row">
+                            <a href="#" class="prev-post text-left d-flex align-items-center">
+                                <div class="icon prev"><i class="fa fa-angle-left"></i></div>
+                                <div class="text"><strong class="text-primary">Previous Article </strong>
+                                    <h6>Quantum algorithm</h6>
+                                </div>
+                            </a>
+                            <a href="#" class="next-post text-right d-flex align-items-center justify-content-end">
+                                <div class="text"><strong class="text-primary">Next Article</strong>
+                                    <h6>Software copyright</h6>
+                                </div>
+                                <div class="icon next"><i class="fa fa-angle-right"> </i></div>
+                            </a>
+                        </div>
+
+                        <div class="post-comments">
+                            <header>
+                                <h3 class="h6">Comment<span class="no-of-comments">(2)</span></h3>
+                            </header>
+                            <div class="comment">
+                                <div class="comment-header d-flex justify-content-between">
+                                    <div class="user d-flex align-items-center">
+                                        <div class="image"><img src="img/user.svg" alt="..."
+                                                                class="img-fluid rounded-circle"></div>
+                                        <div class="title"><strong>Notfound</strong><span class="date">2022-10-03</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment-body">
+                                    <p>You have so much experience!</p>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <div class="comment-header d-flex justify-content-between">
+                                    <div class="user d-flex align-items-center">
+                                        <div class="image"><img src="img/user.svg" alt="..."
+                                                                class="img-fluid rounded-circle"></div>
+                                        <div class="title"><strong>CSL</strong><span class="date">2022-10-07</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment-body">
+                                    <p>I'm going to do my internship this year！</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="add-comment">
+                            <header>
+                                <h3 class="h6">Message Board</h3>
+                            </header>
+                            <form action="#" class="commenting-form">
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <input type="text" name="username" id="username" placeholder="name"
+                                               class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="email" name="useremail" id="useremail" placeholder="e-mail"
+                                               class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <textarea name="usercomment" id="usercomment" placeholder="type your comment"
+                                                  class="form-control"></textarea>
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <button type="button" class="btn btn-secondary" id="send">add a comment</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <aside class="col-lg-4">
+
+            <div class="widget categories">
+                <header>
+                    <h3 class="h6">Catalog</h3>
+                </header>
+                <div class="item d-flex justify-content-between">
+                    <a href="/Academics.html">Academics</a></div>
+                <div class="item d-flex justify-content-between">
+                    <a href="/Journey.html">Journey</a></div>
+                <div class="item d-flex justify-content-between">
+                    <a href="/Life.html">Life</a></div>
+                <div class="item d-flex justify-content-between">
+                    <a href="/Delicaly.html">Delicacy</a></div>
+
+            </div>
+
+            <div>
+                <audio controls="controls">
+                    <source src="cut%20in%20love.mp3" type="audio/ogg">
+                </audio>
+            </div>
+
+            <div class="widget search">
+                <header>
+                    <h3 class="h6">Search about me</h3>
+                </header>
+                <form action="#" class="search-form">
+                    <div class="form-group">
+                        <input type="search" placeholder="What do you want to know about me？">
+                        <button type="submit" class="submit"><i class="icon-search"></i></button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="widget tags">
+                <header>
+                    <h3 class="h6">Tag</h3>
+                </header>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="#" class="tag">#education</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="tag">#research</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="tag">#working</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="tag">#skills</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+</div>
+
+<div class="bottom">
+    <p>
+    <center>copyright@ 22067634g <br> LI Junru<br> Tel:852-67685933
+    </center>
+    </p>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/front.js"></script>
+<script type="text/javascript">
+    $("#send").click(function () {
+        var img = $("<img>").attr("src", "img/user.svg").addClass("img-fluid rounded-ciecle");
+        var imgDiv = $("<div></div>").addClass("image").append(img);
+        var name = $("<strong></strong>").append($("#username").val());
+        var date = new Date();
+        var data = $("<span></span>").addClass("data").append(date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate());
+        var titleDiv = $("<div></div>").addClass("title").append(name).append(data);
+        var userdiv = $("<div></div>").addClass("user d-flex align-items-center").append(imgDiv).append(titleDiv);
+        var headerDiv = $("<div></div>").addClass("comment-header d-flex justify-content-between").append(userdiv);
+        var p = $("<p></p>").append($("#usercomment").val());
+        var bodyDiv = $("<div></div>").addClass("comment-body").append(p);
+        var commentDiv = $("<div></div>").addClass("comment").append(headerDiv).append(bodyDiv).appendTo(".post-comments");
+        $("#username").val("");
+        $("#usercomment").val("");
+        $("#useremail").val("");
+    })
+</script>
+</body>
+
